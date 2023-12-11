@@ -9,11 +9,26 @@ let personalMovieDB = {
     privat: false,
 }
 
-let film = prompt("Один из просмотренных вами фильмов")
-let rating = prompt("На сколько оцените его?")
 
-let film2 = prompt("Один из просмотренных вами фильмов")
-let rating2 = prompt("На сколько оцените его?")
+ 
+// let i = 0;
+// while (i < 2) {
+//     let film = prompt("Один из просмотренных вами фильмов")
+//     if (!film || film.length > 50) {
+//         // i--;
+//         continue;
+//     }
+//     let rating = prompt("На сколько оцените его?")
+//     personalMovieDB.movies[film] = rating;
+//     i++
+// }
 
-personalMovieDB.movies[film] = rating;
-personalMovieDB.movies[film2] = rating2;
+
+if (numberOfFilms < 10) {
+    console.log('Просмотрено довольно мало фильмов');
+} else if(numberOfFilms >= 10 && numberOfFilms <= 30) {
+    console.log('Вы классический зритель');
+} else if (numberOfFilms > 30) {
+    console.log('Вы киноман');
+}
+
